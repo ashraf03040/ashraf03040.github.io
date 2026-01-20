@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScanDump Learning Lab — Zybo Z7-10</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; line-height: 1.5; }
+    h1 { margin-bottom: 8px; }
+    .tag { display:inline-block; padding:4px 10px; border:1px solid #ddd; border-radius:999px; margin:4px 6px 0 0; }
+    .card { border:1px solid #eee; border-radius:12px; padding:16px; margin:16px 0; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>ScanDump Learning Lab (Zybo Z7-10)</h1>
+  <p>
+    I’m building a hands-on lab to learn scan dump capture + analysis using a Zybo Z7-10 (Zynq-7000).
+    This complements my background in test program development and silicon debug workflows.
+  </p>
+
+  <div>
+    <span class="tag">Scan dump</span>
+    <span class="tag">DFT / Scan</span>
+    <span class="tag">Vivado + Vitis</span>
+    <span class="tag">Python analysis</span>
+  </div>
+
+  <div class="card">
+    <h2>Project goals</h2>
+    <ul>
+      <li>Drive scan control signals (scan_clk / scan_en / scan_in) from PL/PS.</li>
+      <li>Capture scan_out stream and store it (BRAM/FIFO or UART dump).</li>
+      <li>Parse + align captured data in Python and generate summary plots.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Repos</h2>
+    <ul>
+      <li><a href="https://github.com/ashraf03040/REPO1">ScanDump Bring-up (Vivado/Vitis)</a></li>
+      <li><a href="https://github.com/ashraf03040/REPO2">ScanDump Data Tools (Python)</a></li>
+      <li><a href="https://github.com/ashraf03040/REPO3">DFT Notes (scan vs stuck-at vs transition)</a></li>
+    </ul>
+    <p>Replace the links above with your actual repo links.</p>
+  </div>
+
+  <div class="card">
+    <h2>What I learned (so far)</h2>
+    <ul>
+      <li>Pin direction + constraints issues can silently break capture.</li>
+      <li>Bit order / alignment matters when interpreting scan_out.</li>
+      <li>Automating build + capture makes iteration faster.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <ul>
+      <li>LinkedIn: (add link)</li>
+      <li>Email: (optional)</li>
+    </ul>
+  </div>
+</body>
+</html>
